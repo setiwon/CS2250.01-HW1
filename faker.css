@@ -19,8 +19,13 @@ body {
     }
 }
 
+h1, h2, h5 {
+    font-size: 13.5px; /* Set the desired font size */
+    font-weight: bold; /* Remove any bold styling */
+}
+
 .custom-hr {
-    width: 50%; 
+    width: 45%; 
     border: none; 
     border-top: 1px solid white; 
     margin: 20px 0 auto; 
