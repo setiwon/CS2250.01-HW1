@@ -1,3 +1,19 @@
+.container {
+    background-image: url('Smash.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the background image */
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-size: contain; /* Change background size for smaller screens */
+    }
+}
+
 .right-align {
     float: right;
     margin-left: 10px;
@@ -6,16 +22,6 @@
 .image-size {
     width: 500px;
     height: auto;
-}
-
-.container {
-    background-image: url('Smash.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center; /* Center the background image */
-    color: white;
-    padding: 20px;
-    margin: 0;
 }
 
 .custom-hr {
