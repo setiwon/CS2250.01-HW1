@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     color: white;
     padding: 20px;
+    padding-bottom:1000px;
     margin: 0;
 }
 
@@ -68,7 +69,7 @@ body {
 .medal-icon {
     width: 17px;
     height: 17px;
-    vertical-align: middle;
+    vertical-align: top;
     margin-right: 5px;
 }
 
