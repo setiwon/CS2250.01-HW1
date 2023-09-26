@@ -1,8 +1,12 @@
+body {
+    background-color: black;
+    color: white; /* Set text color to white or another contrasting color */
+}
+
 .container {
     background-image: url('Smash.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; /* Center the background image */
     color: white;
     padding: 20px;
     margin: 0;
@@ -13,7 +17,7 @@
         background-size: contain; /* Change background size for smaller screens */
     }
     .favorite-player-input {
-        width: 35%;
+        width: 45%;
     }
 }
 

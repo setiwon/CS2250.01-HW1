@@ -1,4 +1,8 @@
 /* External CSS styles */
+body {
+    background-color: black;
+    color: white; /* Set text color to white or another contrasting color */
+}
 
 .container {
     background-image: url('Faker.jpg'); 
@@ -9,7 +13,7 @@
     margin: 0;
 }
 
-@media (max-width: 789px) {
+@media (max-width: 400px) {
     .container {
         background-size: auto 100%; /* Adjust the dimensions for smaller screens */
     }
@@ -34,7 +38,7 @@
 .custom-table {
     border-collapse: collapse;
     width: 60%; /* Adjust the width as needed */
-    max-width: 500px; /* Set a maximum width to prevent stretching */
+    max-width: 400px; /* Set a maximum width to prevent stretching */
 }
 
 .custom-table th, .custom-table td {
