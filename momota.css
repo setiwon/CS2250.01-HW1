@@ -12,6 +12,9 @@
     .container {
         background-size: contain; /* Change background size for smaller screens */
     }
+    .favorite-player-input {
+        width: 100%;
+    }
 }
 
 .right-align {
@@ -46,15 +49,6 @@
     font-size: 50px;
 }
 
-.container {
-    background-image: url('Smash.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 20px;
-    padding-bottom: 1300px;
-    margin: 0;
-}
 
 .custom-hr {
     width: 50%;
