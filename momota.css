@@ -35,10 +35,20 @@ body {
 }
 
 .custom-hr {
-    width: 50%;
+    width: 0%;
     border: none;
     border-top: 1px solid white;
     margin: 20px 0 auto;
+    animation: growWidth 2s ease-out forwards;
+}
+
+@keyframes growWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%; /* Adjust to the desired width */
+    }
 }
 
 .title {

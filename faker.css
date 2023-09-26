@@ -14,13 +14,37 @@ body {
     margin: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
     .container {
         background-image: url('fakermobile.jpg'); 
         background-size: contain;
         background-position-y:35%;
         background-attachment: fixed;
+    }
+    .title {
+        animation: slideAndFadeText 1.0s linear forwards;
+    }
+}
 
+.title {
+    position: relative;
+    width: 0;
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slideAndFadeText 4.5s linear forwards; /* Adjust the duration as needed */
+}
+
+@keyframes slideAndFadeText {
+    0% {
+        opacity: .5;
+        width: 0;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+        transform: translateX(0);
     }
 }
 
@@ -30,10 +54,22 @@ h1, h2, h5 {
 }
 
 .custom-hr {
-    width: 35%; 
+    width: 0; 
     border: none; 
     border-top: 1px solid white; 
     margin: 20px 0 auto; 
+    animation: growWidth 2s ease-out forwards;
+}
+
+@keyframes growWidth {
+    from {
+        width: 0;
+        opacity:0;
+    }
+    to {
+        width: 35%; /* Adjust to the desired width */
+        opacity:1;
+    }
 }
 
 .title {
