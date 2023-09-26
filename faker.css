@@ -18,7 +18,7 @@ body {
     .container {
         background-image: url('fakermobile.jpg'); 
         background-size: contain;
-        background-position-y:15%;
+        background-position-y:35%;
         background-attachment: fixed;
 
     }
