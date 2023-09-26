@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: black;
     color: white; /* Set text color to white or another contrasting color */
@@ -16,9 +20,7 @@ body {
 @media (max-width: 768px) {
     .container {
         background-size: contain; /* Change background size for smaller screens */
-    }
-    .favorite-player-input {
-        width: 45%;
+        background-attachment: fixed;
     }
 }
 
@@ -78,7 +80,7 @@ body {
 }
 
 .favorite-player-input {
-    width: 15%;
+    width: 200px;
 }
 
 img {

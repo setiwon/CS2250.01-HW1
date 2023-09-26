@@ -16,7 +16,11 @@ body {
 
 @media (max-width: 400px) {
     .container {
-        background-size: auto 100%; /* Adjust the dimensions for smaller screens */
+        background-image: url('fakermobile.jpg'); 
+        background-size: contain;
+        background-position-y:35%;
+        background-attachment: fixed;
+
     }
 }
 
