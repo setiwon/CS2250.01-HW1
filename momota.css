@@ -1,0 +1,83 @@
+.right-align {
+    float: right;
+    margin-left: 10px;
+}
+
+.image-size {
+    width: 500px;
+    height: auto;
+}
+
+.container {
+    background-image: url('Smash.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the background image */
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+.custom-hr {
+    width: 50%;
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px 0 auto;
+}
+
+.title {
+    font-size: 50px;
+}
+
+/* External CSS styles */
+
+.return-link {
+    text-decoration: none;
+    color: blue;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.container {
+    background-image: url('Smash.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    padding-bottom: 1300px;
+    margin: 0;
+}
+
+.custom-hr {
+    width: 50%;
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px 0 auto;
+}
+
+.achievement-list {
+    list-style: none;
+}
+
+.medal-icon {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.favorite-player-label {
+    font-weight: bold;
+}
+
+.favorite-player-input {
+    width: 15%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}

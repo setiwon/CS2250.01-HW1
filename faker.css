@@ -1,0 +1,39 @@
+/* External CSS styles */
+
+.container {
+    background-image: url('Faker.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white; 
+    padding: 20px; 
+    padding-bottom: 800px;
+    margin: 0;
+}
+
+.custom-hr {
+    width: 50%; 
+    border: none; 
+    border-top: 1px solid white; 
+    margin: 20px 0 auto; 
+}
+
+.title {
+    font-size: 50px;
+}
+
+.return-link {
+    text-decoration: none;
+    color: blue;
+}
+
+.custom-table {
+    border-collapse: collapse;
+    width: 60%; /* Adjust the width as needed */
+    max-width: 800px; /* Set a maximum width to prevent stretching */
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+}

@@ -1,0 +1,29 @@
+/* External CSS styles */
+
+.welcome-text {
+    color: rgb(24, 24, 235);
+    font-size: 40px;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-list li {
+    margin-left: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: blue;
+}
+
+.cat-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.school-work {
+    font-style: italic;
+}
