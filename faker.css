@@ -1,4 +1,15 @@
 /* External CSS styles */
+
+/* CSS for desktop title (hidden on mobile) */
+.title {
+    font-size: 50px;
+}
+
+/* CSS for mobile title (hidden by default) */
+.mobile-title {
+    display: none;
+}
+
 body {
     background-color: black;
     color: white; /* Set text color to white or another contrasting color */
@@ -22,29 +33,32 @@ body {
         background-attachment: fixed;
     }
     .title {
-        animation: slideAndFadeText 1.0s linear forwards;
+        display: none;
+    }
+
+    .mobile-title {
+        display: block;
+        font-size: 5vw; /* Adjust font size for mobile title */
     }
 }
 
 .title {
     position: relative;
-    width: 0;
+    width: 100;
     opacity: 0;
     white-space: nowrap;
     overflow: hidden;
-    animation: slideAndFadeText 4.5s linear forwards; /* Adjust the duration as needed */
+    animation: slideAndFadeText 2s linear forwards; /* Adjust the duration as needed */
 }
 
 @keyframes slideAndFadeText {
     0% {
         opacity: .5;
-        width: 0;
-        transform: translateX(0%);
+        margin-left: -5%;
     }
     100% {
         opacity: 1;
-        width: 100%;
-        transform: translateX(0);
+        margin-left: 0;
     }
 }
 
