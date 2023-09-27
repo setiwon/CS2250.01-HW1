@@ -24,6 +24,24 @@ body {
     }
 }
 
+.slide-in-bottom {
+    opacity: 0;
+    margin-top: 100%;
+    animation: slideFromBottom 3s forwards;
+    animation-delay: .5s;
+  }
+  
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      margin-top: 25%;
+    }
+    100% {
+      opacity: 1;
+      margin-top: 1.5%;
+    }
+  }
+  
 .right-align {
     float: right;
     margin-left: 10px;
@@ -98,3 +116,26 @@ img {
     height: auto;
     width: auto\9; /* ie8 */
 }
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #2f6fdd;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+  }
+  
+  .button:hover {background-color: #69a1ef}
+  
+  .button:active {
+    background-color: #03307c;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }

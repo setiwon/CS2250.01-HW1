@@ -39,6 +39,7 @@ body {
     .mobile-title {
         display: block;
         font-size: 8vw; /* Adjust font size for mobile title */
+        animation: slideAndFadeText 2s linear forwards;
     }
 }
 
@@ -48,12 +49,12 @@ body {
     opacity: 0;
     white-space: nowrap;
     overflow: hidden;
-    animation: slideAndFadeText 2s linear forwards; /* Adjust the duration as needed */
+    animation: slideAndFadeText 1.5s linear forwards; /* Adjust the duration as needed */
 }
 
 @keyframes slideAndFadeText {
     0% {
-        opacity: .5;
+        opacity: 0;
         margin-left: -5%;
     }
     100% {
