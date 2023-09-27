@@ -19,7 +19,7 @@ body {
 
 .title {
     position: relative;
-    width: 100;
+    width: 100%;
     opacity: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -131,7 +131,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
+    width: auto; /* ie8 */
 }
 
 .button {

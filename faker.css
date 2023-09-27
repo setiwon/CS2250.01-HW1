@@ -27,7 +27,7 @@ body {
 
 .title {
     position: relative;
-    width: 100;
+    width: 100%;
     opacity: 0;
     white-space: nowrap;
     overflow: hidden;

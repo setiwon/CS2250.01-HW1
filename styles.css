@@ -28,6 +28,30 @@
     font-style: italic;
 }
 
+.image-container {
+    position: relative;
+    width: 300px; /* Adjust the width and height as needed */
+    height: auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Add a smooth transition effect */
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Show on hover */
+}
 
 img:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
