@@ -157,7 +157,7 @@ img {
     transform: translateY(4px);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .container {
         background-size: contain; /* Change background size for smaller screens */
         background-attachment: fixed;

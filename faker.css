@@ -108,7 +108,7 @@ h1, h2, h5 {
     text-align: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .container {
         background-image: url('fakermobile.jpg'); 
         background-size: contain;
