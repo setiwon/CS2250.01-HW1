@@ -13,22 +13,39 @@ body {
     background-repeat: no-repeat;
     color: white;
     padding: 20px;
-    height:2200px;
+    height:2000px;
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .container {
-        background-size: contain; /* Change background size for smaller screens */
-        background-attachment: fixed;
+.title {
+    position: relative;
+    width: 100;
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slideAndFadeText 1.5s linear forwards; /* Adjust the duration as needed */
+}
+
+.mobile-title {
+    display: none;
+}
+
+@keyframes slideAndFadeText {
+    0% {
+        opacity: 0;
+        margin-left: -5%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
     }
 }
 
 .slide-in-bottom {
     opacity: 0;
-    margin-top: 100%;
+    margin-top: 25%;
     animation: slideFromBottom 3s forwards;
-    animation-delay: .5s;
+    animation-delay: 2s;
   }
   
   @keyframes slideFromBottom {
@@ -139,3 +156,21 @@ img {
     box-shadow: 0 3px #666;
     transform: translateY(4px);
   }
+
+  @media (max-width: 768px) {
+    .container {
+        background-size: contain; /* Change background size for smaller screens */
+        background-attachment: fixed;
+        height: 1500px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .mobile-title {
+        display: block;
+        font-size: 8vw; /* Adjust font size for mobile title */
+        animation: slideAndFadeText 2s linear forwards;
+    }
+}

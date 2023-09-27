@@ -25,24 +25,6 @@ body {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .container {
-        background-image: url('fakermobile.jpg'); 
-        background-size: contain;
-        background-position-y:35%;
-        background-attachment: fixed;
-    }
-    .title {
-        display: none;
-    }
-
-    .mobile-title {
-        display: block;
-        font-size: 8vw; /* Adjust font size for mobile title */
-        animation: slideAndFadeText 2s linear forwards;
-    }
-}
-
 .title {
     position: relative;
     width: 100;
@@ -62,6 +44,24 @@ body {
         margin-left: 0;
     }
 }
+
+.slide-in-bottom {
+    opacity: 0;
+    margin-top: 25%;
+    animation: slideFromBottom 3s forwards;
+    animation-delay: 2s;
+  }
+  
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      margin-top: 20%;
+    }
+    100% {
+      opacity: 1;
+      margin-top: 1.5%;
+    }
+  }
 
 h1, h2, h5 {
     font-size: 13.5px; /* Set the desired font size */
@@ -106,4 +106,22 @@ h1, h2, h5 {
     border: 1px solid white;
     padding: 8px;
     text-align: left;
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-image: url('fakermobile.jpg'); 
+        background-size: contain;
+        background-position-y:35%;
+        background-attachment: fixed;
+    }
+    .title {
+        display: none;
+    }
+
+    .mobile-title {
+        display: block;
+        font-size: 8vw; /* Adjust font size for mobile title */
+        animation: slideAndFadeText 2s linear forwards;
+    }
 }
