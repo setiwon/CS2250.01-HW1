@@ -161,6 +161,8 @@ img {
     .container {
         background-size: contain; /* Change background size for smaller screens */
         background-attachment: fixed;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
         height: 1500px;
     }
 
