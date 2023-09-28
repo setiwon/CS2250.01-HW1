@@ -112,8 +112,8 @@ h1, h2, h5 {
     .container {
         background-image: url('fakermobile.jpg'); 
         background-size: contain;
-        background-position-y:35%;
         background-attachment: fixed;
+        background-position-y:35%;
     }
     .title {
         display: none;
